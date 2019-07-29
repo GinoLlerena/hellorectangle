@@ -5,12 +5,24 @@
 import 'package:flutter/material.dart';
 
 import 'Category.dart';
+import 'category_route.dart';
 
 const _categoryName = 'Cake';
 const _categoryIcon = Icons.cake;
 const _categoryColor = Colors.green;
 
+
 void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Unit Converter',
+      home: CategoryRoute()
+    )
+  );
+}
+
+/*void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -30,7 +42,7 @@ void main() {
       ),
     ),
   );
-}
+}*/
 
 class HelloRectangle extends StatelessWidget {
   @override
